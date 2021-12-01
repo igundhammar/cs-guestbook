@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\idagu\\Desktop\\Plugg\\DT071G Programmering i C#.NET\\moment3\\Moment3\\Moment3\\Moment3.csproj",
+      "projectUniqueName": "C:\\Users\\idagu\\Desktop\\Plugg\\Kladd\\cs-guestbook\\Moment3\\Moment3.csproj",
       "projectName": "Moment3",
-      "projectPath": "C:\\Users\\idagu\\Desktop\\Plugg\\DT071G Programmering i C#.NET\\moment3\\Moment3\\Moment3\\Moment3.csproj",
+      "projectPath": "C:\\Users\\idagu\\Desktop\\Plugg\\Kladd\\cs-guestbook\\Moment3\\Moment3.csproj",
       "packagesPath": "C:\\Users\\idagu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\idagu\\Desktop\\Plugg\\DT071G Programmering i C#.NET\\moment3\\Moment3\\Moment3\\obj\\",
+      "outputPath": "C:\\Users\\idagu\\Desktop\\Plugg\\Kladd\\cs-guestbook\\Moment3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\idagu\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -11,7 +11,7 @@ namespace Moment3
         {
             // Create instance of Entries class and run ReadFile
             var entries = new Entries();
-            var result = entries.ReadFile();
+            entries.ReadFile();
             // Loop until option X is pressed by user
             while (true)
             {
@@ -63,6 +63,7 @@ namespace Moment3
                         var entry = new Entry(author, entryText);
                         entries.AddEntry(entry);
                         entries.WriteToFile();
+                        Main();
                         break;
 
 
@@ -97,7 +98,7 @@ namespace Moment3
                     // Case 3, check if guestbook is empty and write errormessage. If not, loop through the guestbook and print out to the console all entries of the guestbook.
                     case "3":
                         Console.Clear();
-                        if (!result)
+                        if (entries.GetGuestbook().Count == 0)
                         {
                             Console.WriteLine("Gästboken är tom. Skriv ett inlägg!");
                             Console.WriteLine();

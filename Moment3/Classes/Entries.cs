@@ -17,33 +17,27 @@ namespace Moment3.Classes
 
 
         // Read file "Entry.txt" and set the lines of the text file to variables. Call function AddEntry with parameters of the variables.
-        public bool ReadFile()
+        public void ReadFile()
         {
             if (!File.Exists("Entry.txt"))
             {
-                return false;
+                var file = new StreamWriter("Entry.txt");
+                file.Close();
             }
             else
             {
-                try
+                using StreamReader read = new StreamReader("Entry.txt");
+                while (!read.EndOfStream)
                 {
-                    using StreamReader read = new StreamReader("Entry.txt");
-                    while (!read.EndOfStream)
-                    {
-                        var author = read.ReadLine();
-                        var entryText = read.ReadLine();
-                        var entry = new Entry(author, entryText);
-                        this.AddEntry(entry);
-                    }
-                }
-                catch (Exception)
-                {
-                    return true;
+                    var author = read.ReadLine();
+                    var entryText = read.ReadLine();
+                    var entry = new Entry(author, entryText);
+                    this.AddEntry(entry);
                 }
             }
 
-            return true;
         }
+
 
 
         // Add the entry from ReadFile to the List of all entries.
